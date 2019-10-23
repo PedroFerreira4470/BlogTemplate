@@ -1,11 +1,23 @@
+
+:root {
+    --main-background-color:#ffffff;
+    --main-font: 'Ubuntu', sans-serif;
+    --main-font-bold:700;
+    --main-title-color: #143774;
+    --main-title-font: 'Lora', serif;
+    --main-link-color: #1792d2;
+    --main-border-color:#efefef;
+}
+
 * {box-sizing: border-box;}
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--main-font);
     line-height: 1.6;
     font-size: 1.125rem;
     font-weight: 300;
+    background-color:var(--main-background-color);
 }
 
 img {
@@ -27,9 +39,9 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Lora', serif;
+    font-family: var(--main-title-font);
     font-weight: 400;
-    color: #143774;
+    color: var(--main-title-color);
     margin-top: 0;
 }
 
@@ -40,7 +52,7 @@ h1 {
 }
 
 h3 {
-    color: #1792d2;
+    color: var(--main-link-color);
 }
 
 strong{
@@ -48,17 +60,17 @@ strong{
 }
 
 a {
-    color: #1792d2;
+    color:var(--main-link-color);
 }
 
 footer{
-    background-color: #143774;
+    background-color: var(--main-title-color);
     color:white;
 }
 
 a:hover,
 a:focus{
-    color:#143774;
+    color:var(--main-title-color)
 }
 
 .current-page {
@@ -70,8 +82,8 @@ a:focus{
 }
 
 .subtitle {
-    font-weight: 700;
-    color: #1792d2;
+    font-weight: var(--main-font-bold);
+    color: var(--main-link-color);
     font-size: .75rem;
     margin: 0;
 }
@@ -91,14 +103,14 @@ a:focus{
 }
 
 .article-read-more {
-    color:#1792d2;
+    color:var(--main-link-color);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: var(--main-font-bold);;
 }
 
 .article-read-more:hover,
 .article-read-more:focus {
-    color: #143774;
+    color: var(--main-title-color);
     text-decoration: underline;
 }
 
@@ -109,12 +121,12 @@ a:focus{
 }
 
 .widget-title {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+    font-family: var(--main-font);
+    font-weight: var(--main-font-bold);;
 }
 
 .widget-recent-post-title {
-    color: #143774;
+    color: var(--main-title-color);
 }
 
 /*  =======================================
@@ -146,7 +158,7 @@ header {
 }
 
 footer {
-    background-color: #143774;
+    background-color: var(--main-title-color);
     color: white;
     text-align: center;
     padding: 3em 0;
@@ -188,13 +200,13 @@ nav li {
 
 nav li:hover,
 nav li:focus {
-    color: #1792d2;
+    color: var(--main-link-color);
     transform:scale(1.1)
 }
 
 nav a {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: var(--main-font-bold);;
     padding: .25em 0;
 }
 
@@ -271,7 +283,7 @@ nav a {
 /* widgets */
 
 .sidebar-widget {
-    border: 20px solid #efefef;
+    border: 20px solid var(--main-border-color);
     margin-bottom: 2em;
     padding:1em;
 }
