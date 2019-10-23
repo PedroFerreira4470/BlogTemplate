@@ -13,6 +13,13 @@ img {
     display: block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /* =============================
         START Typography
 ===========================*/
@@ -32,6 +39,10 @@ h1 {
     margin: 0;
 }
 
+h3 {
+    color: #1792d2;
+}
+
 strong{
     font-weight: 800;
 }
@@ -48,6 +59,14 @@ footer{
 a:hover,
 a:focus{
     color:#143774;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
 }
 
 .subtitle {
@@ -92,6 +111,10 @@ a:focus{
 .widget-title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+}
+
+.widget-recent-post-title {
+    color: #143774;
 }
 
 /*  =======================================
